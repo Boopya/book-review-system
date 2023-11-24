@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Book Review System</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div>
+  <h1>Book Review System</h1>
+</div>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% block content %}{% endblock %}
+</section>
